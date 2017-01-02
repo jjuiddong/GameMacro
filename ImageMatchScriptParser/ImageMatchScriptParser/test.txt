@@ -1,0 +1,369 @@
+
+gray = 1
+log = 0
+
+label_1 = img/img2.png
+label_2 = img/img3.png
+label_3 = img/img4.png
+label_4 = img/img5.png
+label_5 = img/img6.png
+label_6 = img/img7.png
+label_7 = img/img8.png
+
+sub_label_1 = img/num1.png
+sub_label_2 = img/num2.png
+sub_label_3 = img/num3.png
+sub_label_4 = img/num4.png
+sub_label_5 = img/num5.png
+sub_label_6 = img/num6.png
+sub_label_7 = img/num7.png
+sub_label_8 = img/num8.png
+sub_label_9 = img/num9.png
+sub_label_0 = img/num0.png
+
+label_id0 = star
+label_id1 = circle
+label_id2 = up
+label_id3 = triangle
+label_id4 = right
+label_id5 = star2
+label_id6 = rect
+
+sub_label_id0 = num0
+sub_label_id1 = num1
+sub_label_id2 = num2
+sub_label_id3 = num3
+sub_label_id4 = num4
+sub_label_id5 = num5
+sub_label_id6 = num6
+sub_label_id7 = num7
+sub_label_id8 = num8
+sub_label_id9 = num9
+
+
+src_result_roi1 = 285,187,200,200
+src_result_roi2 = 362,26,150,150
+
+number_relation_roi = 50, 50, 200, 200
+number_relation_roi2 = 50, 50, 200, 200, +
+
+
+
+detect_shape:
+	label_1
+		label_id0
+	label_2
+		label_id1
+	label_3
+		label_id2
+	label_4
+		label_id3
+	label_5
+		label_id4
+	label_6
+		label_id5
+	label_7
+		label_id6
+
+
+detect_shape_roi:
+	label_1, src_result_roi1
+		label_id0
+	label_2, src_result_roi2
+		label_id1
+	label_3, 400, 300, 300, 300
+		label_id2
+	label_4
+		label_id3
+	label_5
+		label_id4
+	label_6
+		label_id5
+	label_7
+		label_id6
+
+
+
+detect_number:
+	label_1
+		sub_label_0
+			sub_label_id0
+		sub_label_1
+			sub_label_id1
+		sub_label_2
+			sub_label_id2
+		sub_label_3
+			sub_label_id3
+		sub_label_4
+			sub_label_id4
+		sub_label_5
+			sub_label_id5
+		sub_label_6
+			sub_label_id6
+		sub_label_7
+			sub_label_id7
+		sub_label_8
+			sub_label_id8
+		sub_label_9
+			sub_label_id9
+	label_2
+		sub_label_0
+			sub_label_id0
+		sub_label_1
+			sub_label_id1
+		sub_label_2
+			sub_label_id2
+		sub_label_3
+			sub_label_id3
+		sub_label_4
+			sub_label_id4
+		sub_label_5
+			sub_label_id5
+		sub_label_6
+			sub_label_id6
+		sub_label_7
+			sub_label_id7
+		sub_label_8
+			sub_label_id8
+		sub_label_9
+			sub_label_id9
+
+	label_3
+		sub_label_0
+			sub_label_id0
+		sub_label_1
+			sub_label_id1
+		sub_label_2
+			sub_label_id2
+		sub_label_3
+			sub_label_id3
+		sub_label_4
+			sub_label_id4
+		sub_label_5
+			sub_label_id5
+		sub_label_6
+			sub_label_id6
+		sub_label_7
+			sub_label_id7
+		sub_label_8
+			sub_label_id8
+		sub_label_9
+			sub_label_id9
+
+	label_4
+		sub_label_0
+			sub_label_id0
+		sub_label_1
+			sub_label_id1
+		sub_label_2
+			sub_label_id2
+		sub_label_3
+			sub_label_id3
+		sub_label_4
+			sub_label_id4
+		sub_label_5
+			sub_label_id5
+		sub_label_6
+			sub_label_id6
+		sub_label_7
+			sub_label_id7
+		sub_label_8
+			sub_label_id8
+		sub_label_9
+			sub_label_id9
+
+	label_5
+		sub_label_0
+			sub_label_id0
+		sub_label_1
+			sub_label_id1
+		sub_label_2
+			sub_label_id2
+		sub_label_3
+			sub_label_id3
+		sub_label_4
+			sub_label_id4
+		sub_label_5
+			sub_label_id5
+		sub_label_6
+			sub_label_id6
+		sub_label_7
+			sub_label_id7
+		sub_label_8
+			sub_label_id8
+		sub_label_9
+			sub_label_id9
+
+	label_6
+		sub_label_0
+			sub_label_id0
+		sub_label_1
+			sub_label_id1
+		sub_label_2
+			sub_label_id2
+		sub_label_3
+			sub_label_id3
+		sub_label_4
+			sub_label_id4
+		sub_label_5
+			sub_label_id5
+		sub_label_6
+			sub_label_id6
+		sub_label_7
+			sub_label_id7
+		sub_label_8
+			sub_label_id8
+		sub_label_9
+			sub_label_id9
+
+	label_7
+		sub_label_0
+			sub_label_id0
+		sub_label_1
+			sub_label_id1
+		sub_label_2
+			sub_label_id2
+		sub_label_3
+			sub_label_id3
+		sub_label_4
+			sub_label_id4
+		sub_label_5
+			sub_label_id5
+		sub_label_6
+			sub_label_id6
+		sub_label_7
+			sub_label_id7
+		sub_label_8
+			sub_label_id8
+		sub_label_9
+			sub_label_id9
+
+	label_8
+		sub_label_0
+			sub_label_id0
+		sub_label_1
+			sub_label_id1
+		sub_label_2
+			sub_label_id2
+		sub_label_3
+			sub_label_id3
+		sub_label_4
+			sub_label_id4
+		sub_label_5
+			sub_label_id5
+		sub_label_6
+			sub_label_id6
+		sub_label_7
+			sub_label_id7
+		sub_label_8
+			sub_label_id8
+		sub_label_9
+			sub_label_id9
+
+	label_9
+		sub_label_0
+			sub_label_id0
+		sub_label_1
+			sub_label_id1
+		sub_label_2
+			sub_label_id2
+		sub_label_3
+			sub_label_id3
+		sub_label_4
+			sub_label_id4
+		sub_label_5
+			sub_label_id5
+		sub_label_6
+			sub_label_id6
+		sub_label_7
+			sub_label_id7
+		sub_label_8
+			sub_label_id8
+		sub_label_9
+			sub_label_id9
+
+detect_sub_number:
+	sub_label_0
+		sub_label_id0
+	sub_label_1
+		sub_label_id1
+	sub_label_2
+		sub_label_id2
+	sub_label_3
+		sub_label_id3
+	sub_label_4
+		sub_label_id4
+	sub_label_5
+		sub_label_id5
+	sub_label_6
+		sub_label_id6
+	sub_label_7
+		sub_label_id7
+	sub_label_8
+		sub_label_id8
+	sub_label_9
+		sub_label_id9
+
+
+detect_number2:
+	label_1
+		detect_sub_number
+	label_2
+		detect_sub_number
+	label_3
+		detect_sub_number
+	label_4
+		detect_sub_number
+	label_5
+		detect_sub_number
+	label_6
+		detect_sub_number
+	label_7
+		detect_sub_number
+
+
+detect_sub_number_relation:
+	sub_label_0, number_relation_roi, +
+		sub_label_id0
+	sub_label_1, number_relation_roi, +
+		sub_label_id1
+	sub_label_2, number_relation_roi, +
+		sub_label_id2
+	sub_label_3, number_relation_roi, +
+		sub_label_id3
+	sub_label_4, number_relation_roi, +
+		sub_label_id4
+	sub_label_5, number_relation_roi2
+		sub_label_id5
+	sub_label_6, number_relation_roi2
+		sub_label_id6
+	sub_label_7, number_relation_roi2
+		sub_label_id7
+	sub_label_8, number_relation_roi2
+		sub_label_id8
+	sub_label_9, number_relation_roi2
+		sub_label_id9
+
+
+
+detect_number_relation_roi:
+	label_1
+		detect_sub_number_relation
+	label_2
+		detect_sub_number_relation
+	label_3
+		detect_sub_number_relation
+	label_4
+		detect_sub_number_relation
+	label_5
+		detect_sub_number_relation
+	label_6
+		detect_sub_number_relation
+	label_7
+		detect_sub_number_relation
+
+
+detect_etc:
+	label_etc
+		0
+

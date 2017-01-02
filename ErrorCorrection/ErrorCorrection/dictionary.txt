@@ -1,0 +1,173 @@
+
+word:
+discipline rally
+discipline rallycross
+discipline trailblazer
+discipline freestyle gymkhana
+discipline landrush
+discipline head2head
+discipline drift showcase
+discipline smash attack
+discipline speed run
+discipline gymkhana sprint
+discipline gymkhana attack
+discipline gymkhana
+
+
+location finland
+location kenya
+location michigan
+location monte carlo
+location norway
+location aspen
+location la coliseum
+location monaco
+location shibuya
+location smelter
+location dc compound
+
+track tupasentie
+track hanisjarventie
+track lankamaa
+track isorjarvi
+track alhojarvi
+track kaatselka
+track kakaristo
+track mutanen
+track paijanne approach
+track vaaksy run
+track evijarvie
+
+track mwatate
+track taveta descent
+track crocodile point
+track wundanyi climb
+track tsavo
+track chumvini rise
+track mwanda
+track taita hills
+track leopard rock
+track yatta ridge
+track garba tula
+
+track mountain drive
+track peninsula run
+track quincy mine
+track kenton descent
+track horizon drive
+track calumet pass
+track lighthouse view
+track pine ridge
+track lake gratiot
+track lake superior
+track eagle river
+
+track col st roch
+track baroque
+track gorges de piaon
+track lacet de blanc
+track sospel
+track col de turini
+track bois noir
+track route des anges
+
+track kantvegen
+track litlikaupanger
+track paalsrudvegen
+track aasstuevegen
+track hamar descent
+track birkebeinervegen
+track skaarsetsaga
+track rustadvegen
+track vaaler climb
+track hafjell descent
+track nordsetervegen
+track bobsleigh run
+
+
+track lakeside
+track lake view
+track snowmass sprint
+track snowmass loop
+track eagle hill rise
+track eagle hill loop
+track brush creek sprint
+track brush creek dash
+track buttermilk descent
+track buttermilk climb
+
+track exposition drive
+track figueroa loop
+track vermont avenue
+track arena sprint
+track memorial park
+track coliseum air
+track olympic field
+track exposition plaza
+
+
+track casino square
+track port neuve
+track sainte devote
+track quai antoine
+track boulevard albert
+track port hercule
+track palace square
+track harbour view
+track marina face off
+track marina duel
+
+track sakuragaokacho
+track udagawacho
+track yamanote line
+track hachiko square
+
+track county loop
+track portage canal
+track houghton sprint
+track waterfront park
+track copper run
+track maple woods
+track atlantic mill
+track coles creek
+track dredger duel
+track furnace duel
+
+track parking lot
+track depot
+track waterfront
+track power station
+track all areas
+track parking lot depot
+
+vehicle class pro
+vehicle class open
+vehicle class s2000
+vehicle class 90s
+vehicle class group b
+vehicle class 80s
+vehicle class 70s
+vehicle class 60s
+vehicle class raid
+vehicle class s2000 90s
+vehicle class 80s group b
+vehicle class 60s 70s
+vehicle class rallycross
+vehicle class rallyx group b
+vehicle class modern
+vehicle class classic
+vehicle class classic modern
+vehicle class trucks
+vehicle class buggies
+vehicle class trucks buggies
+
+
+ambiguous:
+i - I - | - L - J - H
+C - G
+V - Y
+s - 5 - 8
+R - B
+0 - O
+$ - S
+

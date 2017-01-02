@@ -1,0 +1,220 @@
+source = sourceimage/finland_alhojarvi.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 22
+    depth = 0
+    max = 0.458447
+    label = label/player2_label.png
+source = sourceimage/finland_hanisjarventie.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 21
+    depth = 0
+    max = 0.402104
+    label = label/player2_label.png
+source = sourceimage/finland_hanisjarventie2.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.338538
+    label = label/player2_label.png
+source = sourceimage/finland_isojarvi.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.334432
+    label = label/player2_label.png
+source = sourceimage/finland_kaatselk.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.339594
+    label = label/player2_label.png
+source = sourceimage/finland_kakaristo.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.451074
+    label = label/player2_label.png
+source = sourceimage/finland_lankamaa.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.396449
+    label = label/player2_label.png
+source = sourceimage/finland_lankamaa2.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.421389
+    label = label/player2_label.png
+source = sourceimage/finland_mutanen.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.454112
+    label = label/player2_label.png
+source = sourceimage/finland_mutanen2.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.454148
+    label = label/player2_label.png
+source = sourceimage/finland_tupasentie_pro.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.425245
+    label = label/player2_label.png
+source = sourceimage/finland_tupasentie_pro2.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.334027
+    label = label/player2_label.png
+source = sourceimage/finland_tupasentie_pro3.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.357938
+    label = label/player2_label.png
+source = sourceimage/finland_tupasentie_pro4.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.334027
+    label = label/player2_label.png
+source = sourceimage/finland_tupasentie_pro5.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 8
+    depth = 0
+    max = 0.332251
+    label = label/player2_label.png
+source = sourceimage/finland_tupasentie_pro6.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.352848
+    label = label/player2_label.png
+source = sourceimage/kenya_mwatate_pro.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.366599
+    label = label/player2_label.png
+source = sourceimage/kenya_chumvinirise_1.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.313238
+    label = label/player2_label.png
+source = sourceimage/kenya_chumvinirise_2.png,    execute(detect_rank) = rank1
+    elpase time = 304
+    depth = 0
+    max = 1
+    label = label/player2_label.png
+        depth = 1
+        max = 1
+        label = label/num1_label.png
+source = sourceimage/kenya_chumvinirise_3.png,    execute(detect_rank) = rank1
+    elpase time = 301
+    depth = 0
+    max = 0.998227
+    label = label/player2_label.png
+        depth = 1
+        max = 0.997223
+        label = label/num1_label.png
+source = sourceimage/kenya_crocodilepoint_1.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.312127
+    label = label/player2_label.png
+source = sourceimage/kenya_crocodilepoint_2.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.328033
+    label = label/player2_label.png
+source = sourceimage/kenya_mwanda_1.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.367879
+    label = label/player2_label.png
+source = sourceimage/kenya_mwanda_2.png,    execute(detect_rank) = rank1
+    elpase time = 338
+    depth = 0
+    max = 0.991453
+    label = label/player2_label.png
+        depth = 1
+        max = 0.941595
+        label = label/num1_label.png
+source = sourceimage/kenya_mwanda_3.png,    execute(detect_rank) = rank1
+    elpase time = 320
+    depth = 0
+    max = 0.991427
+    label = label/player2_label.png
+        depth = 1
+        max = 0.937284
+        label = label/num1_label.png
+source = sourceimage/kenya_taitahills_1.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.299832
+    label = label/player2_label.png
+source = sourceimage/kenya_taitahills_2.png,    execute(detect_rank) = rank7
+    elpase time = 321
+    depth = 0
+    max = 0.91379
+    label = label/player2_label.png
+        depth = 1
+        max = 0.999997
+        label = label/num7_1_label.png
+source = sourceimage/kenya_taitahills_3.png,    execute(detect_rank) = rank7
+    elpase time = 334
+    depth = 0
+    max = 0.907059
+    label = label/player2_label.png
+        depth = 1
+        max = 0.99835
+        label = label/num7_1_label.png
+source = sourceimage/kenya_taitahills_4.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.362818
+    label = label/player2_label.png
+source = sourceimage/kenya_taitahills_5.png,    execute(detect_rank) = rank8
+    elpase time = 312
+    depth = 0
+    max = 0.933026
+    label = label/player2_label.png
+        depth = 1
+        max = 0.998794
+        label = label/num8_label.png
+source = sourceimage/kenya_taitahills_6.png,    execute(detect_rank) = rank8
+    elpase time = 341
+    depth = 0
+    max = 0.927674
+    label = label/player2_label.png
+        depth = 1
+        max = 0.998404
+        label = label/num8_label.png
+source = sourceimage/kenya_taventadescent_1.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.341776
+    label = label/player2_label.png
+source = sourceimage/kenya_taventadescent_2.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.345729
+    label = label/player2_label.png
+source = sourceimage/kenya_tsavo_1.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.358749
+    label = label/player2_label.png
+source = sourceimage/kenya_tsavo_2.png,    execute(detect_rank) = rank1
+    elpase time = 337
+    depth = 0
+    max = 0.992806
+    label = label/player2_label.png
+        depth = 1
+        max = 0.941605
+        label = label/num1_label.png
+source = sourceimage/kenya_tsavo_3.png,    execute(detect_rank) = rank1
+    elpase time = 343
+    depth = 0
+    max = 0.992264
+    label = label/player2_label.png
+        depth = 1
+        max = 0.939423
+        label = label/num1_label.png
+source = sourceimage/kenya_wundanyiclimb_1.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 20
+    depth = 0
+    max = 0.383897
+    label = label/player2_label.png
+source = sourceimage/kenya_wundanyiclimb_2.png,    execute(detect_rank) = ~ fail ~
+    elpase time = 19
+    depth = 0
+    max = 0.358259
+    label = label/player2_label.png
