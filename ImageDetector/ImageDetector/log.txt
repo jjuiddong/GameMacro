@@ -1,0 +1,2 @@
+Error : error imagematch script read error!!
+Error : Error!! cFlowControl::Init(), read error image match script 
