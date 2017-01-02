@@ -1,5 +1,13 @@
 # GameMacro
 Dirt3 GameMacro using OpenCV Vision Algorithm with VS2015 C++
+ - OpenCV3.1
+ - Boost
+ - Tesseract OCR
+ - MFC
+ - WinSock
+ - Fraps Game Capture Program
+
+Work
 - ImageDetect -> Analyze -> Edit FlowScript -> Run Flow program
 
 ![](https://github.com/jjuiddong/GameMacro/blob/master/Doc/ImageDetector.png?raw=true)
