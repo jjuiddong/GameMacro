@@ -1,0 +1,107 @@
+
+gray = 1
+log = 0
+debug = 0
+matchtype = 0
+
+
+label_title1 = label/dirt3_title1.jpg
+label_title2 = label/dirt3_title2.jpg
+
+label_profile = label/dirt3_profile.jpg
+
+label_main1 = label/dirt3_main1.jpg
+label_main2 = label/dirt3_main2.jpg
+label_main3 = label/dirt3_main3.jpg
+label_main4 = label/dirt3_main4.jpg
+label_main5 = label/dirt3_main5.jpg
+label_main6 = label/dirt3_main6.jpg
+label_main7 = label/dirt3_main7.jpg
+label_main8 = label/dirt3_main8.jpg
+
+
+label_option1 = label/dirt3_option1.jpg
+label_option2 = label/dirt3_option2.jpg
+label_option3 = label/dirt3_option3.jpg
+label_option4 = label/dirt3_option4.jpg
+label_option5 = label/dirt3_option5.jpg
+label_option6 = label/dirt3_option6.jpg
+label_option7 = label/dirt3_option7.jpg
+label_option8 = label/dirt3_option8.jpg
+
+
+
+label_single1 = label/dirt3_single1.jpg
+label_single2 = label/dirt3_single2.jpg
+label_single3 = label/dirt3_single3.jpg
+label_single4 = label/dirt3_single4.jpg
+
+label_timetrial_menu = label/dirt3_timetrial_menu.jpg
+label_timetrial_ingame_menu = label/dirt3_timetrial_ingame_menu.jpg
+
+label_singlerace_menu = label/dirt3_singlerace_menu.jpg
+label_singlerace_ingame_menu = label/dirt3_singlerace_ingame_menu.jpg
+
+label_ghost_select = label/dirt3_ghostsel.jpg
+label_vehicle_select = label/dirt3_vehiclesel.jpg
+label_livery_select = label/dirt3_liverysel.jpg
+
+
+
+
+id_title = title
+id_profile = profile
+id_main = main
+id_option = option
+id_single = singleplayer
+id_timetrial_menu = timetrial_menu
+id_timetrial_ingame_menu = timetrial_ingame_menu
+id_singlerace_menu = singlerace_menu
+id_singlerace_ingame_menu = singlerace_ingame_menu
+id_ghost_select = ghost_select
+id_vehicle_select = vehicle_select
+id_livery_select = livery_select
+
+
+detect_scene:
+	label_title1, threshold_0.65
+		id_title
+	label_title2, threshold_0.65
+		id_title
+	label_profile, threshold_0.65
+		id_profile
+	label_main1, threshold_0.65
+		id_main
+	label_main2, threshold_0.65
+		id_main
+	label_main3, threshold_0.65
+		id_main
+	label_main4, threshold_0.65
+		id_main
+	label_main5, threshold_0.65
+		id_main
+	label_main6, threshold_0.65
+		id_main
+	label_main7, threshold_0.65
+		id_main
+	label_main8, threshold_0.65
+		id_main
+	label_option1, threshold_0.65
+		id_option
+	label_option2, threshold_0.65
+		id_option
+	label_option3, threshold_0.65
+		id_option
+	label_option4, threshold_0.65
+		id_option
+	label_option5, threshold_0.65
+		id_option
+	label_option6, threshold_0.65
+		id_option
+	label_option7, threshold_0.65
+		id_option
+	label_option8, threshold_0.65
+		id_option
+
+
+

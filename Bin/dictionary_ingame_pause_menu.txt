@@ -1,0 +1,23 @@
+
+word:
+continue
+restart
+restart via service area	{ restart_via_service_area }
+reset vehicle
+replay
+ghost options			{ ghost_options }
+options
+end session			{ end_session }
+
+
+
+ambiguous:
+i - I - | - L - J - H
+C - G
+V - Y
+s - 5 - 8
+R - B
+0 - O - Q
+$ - S
+
+

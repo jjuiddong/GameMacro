@@ -1,0 +1,20 @@
+
+word:
+race
+ghosts
+assists
+vehicle setup		{ vehicle_setup }
+entrants
+difficulty and assists	{ difficulty_and_assists }
+
+
+
+ambiguous:
+i - I - | - L - J - H
+C - G
+V - Y
+s - 5 - 8
+R - B
+0 - O - Q
+$ - S
+

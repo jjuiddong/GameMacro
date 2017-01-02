@@ -1,0 +1,697 @@
+
+gray = 1
+log = 0
+debug = 0
+matchtype = 1
+
+
+timetrial_menu_hsv = hsv_80_100_100_90_255_255
+timetrial_menu_hsv2 = hsv_80_100_100_90_255_255
+timetrial_menu_hsv3 = hsv_30_0_100_90_255_255
+timetrial_menu_hsv4 = hsv_0_0_100_90_255_255
+timetrial_menu_roi_old = 300,250,1000,350
+timetrial_menu_roi = 150,250,1300,600
+
+
+
+@category_ocr:
+	dictionary.txt ocrmatch timetrial_menu_hsv1
+		return_parent
+	dictionary.txt ocrmatch timetrial_menu_hsv2
+		return_parent
+	dictionary.txt ocrmatch timetrial_menu_hsv3
+		return_parent
+
+
+
+@category_sub:
+	label/category/condition1.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		condition
+	label/category/condition2_1.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		label/category/condition2_2.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+			condition
+	label/category/discipline1.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		discipline
+	label/category/discipline2.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		discipline
+	label/category/discipline3.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		discipline
+	label/category/location1.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		location
+	label/category/location2.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		location
+	label/category/location3.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		location
+	label/category/location4.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		location
+	label/category/track1.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv2, timetrial_menu_roi
+		track
+	label/category/track2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv2, timetrial_menu_roi
+		track
+	label/category/track3.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv2, timetrial_menu_roi
+		track
+	label/category/track4.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv2, timetrial_menu_roi
+		track
+	label/category/vehicle_class1_1.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		label/category/vehicle_class1_2.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+			vehicle_class
+	label/category/vehicle_class2_1.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		label/category/vehicle_class2_2.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+			vehicle_class
+	label/category/vehicle_class3_1.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+		label/category/vehicle_class3_2.jpg,  templatematch, threshold_0.65, timetrial_menu_hsv2, timetrial_menu_roi
+			vehicle_class
+
+
+
+@category:
+	@category_sub
+	@category_sub, { timetrial_menu_hsv2 = timetrial_menu_hsv3 }
+
+
+
+
+@discipline:
+	label/discipline/rally.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		rally
+	label/discipline/rally2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		rally
+	label/discipline/rallycross.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		rallycross
+	label/discipline/rallycross2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		rallycross
+	label/discipline/rallycross2_1.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/discipline/rallycross2_2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			rallycross
+	label/discipline/trailblazer.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		trailblazer
+	label/discipline/trailblazer2_1.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/discipline/trailblazer2_2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			trailblazer
+	label/discipline/freestyle_gymkhana.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		freestyle_gymkhana
+	label/discipline/landrush.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		landrush
+	label/discipline/landrush2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		landrush
+	label/discipline/head2head.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		head2head
+	label/discipline/head2head2_1.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/discipline/head2head2_2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			head2head
+	label/discipline/drift_showcase.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		drift_showcase
+	label/discipline/smash_attack.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		smash_attack
+	label/discipline/speed_run.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		speed_run
+	label/discipline/gymkhana_sprint1.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/discipline/gymkhana_sprint2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			gymkhana_sprint
+	label/discipline/gymkhana_attack1.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/discipline/gymkhana_attack2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			gymkhana_attack
+	label/discipline/gymkhana1.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/discipline/gymkhana2.jpg,  templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			gymkhana
+
+
+@location:
+	label/location/finland.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		finland
+	label/location/finland2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		finland
+	label/location/kenya.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		kenya
+	label/location/kenya2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		kenya
+	label/location/michigan.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		michigan
+	label/location/michigan2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		michigan
+	label/location/monte_carlo.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		monte_carlo
+	label/location/monte_carlo2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/location/monte_carlo2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			monte_carlo
+	label/location/norway.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		norway
+	label/location/norway2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		norway
+	label/location/aspen.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		aspen
+	label/location/la_coliseum1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/location/la_coliseum1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			la_coliseum
+	label/location/monaco.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		monaco
+	label/location/shibuya.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		shibuya
+	label/location/smelter.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		smelter
+	label/location/dc_compound.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		dc_compound
+
+
+
+@track_finland:
+	label/track/finland/alhojarvi.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		alhojarvi
+	label/track/finland/alhojarvi2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		alhojarvi
+	label/track/finland/hanisjarventie.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		hanisjarventie
+	label/track/finland/hanisjarventie2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/finland/hanisjarventie2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			hanisjarventie
+	label/track/finland/isojarvi.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		isojarvi
+	label/track/finland/isojarvi2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		isojarvi
+	label/track/finland/kaatselka.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		kaatselka
+	label/track/finland/kaatselka2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		kaatselka
+	label/track/finland/kakaristo.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		kakaristo
+	label/track/finland/kakaristo2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		kakaristo
+	label/track/finland/lankamaa.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		lankamaa
+	label/track/finland/lankamaa2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		lankamaa
+	label/track/finland/mutanen.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		mutanen
+	label/track/finland/mutanen2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		mutanen
+	label/track/finland/tupasentie.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		tupasentie
+	label/track/finland/tupasentie2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		tupasentie
+	label/track/finland/paijanne_approach1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/finland/paijanne_approach1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			paijanne_approach
+	label/track/finland/vaaksy_run1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/finland/vaaksy_run1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			vaaksy_run
+	label/track/finland/evijarvie.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		evijarvie
+
+
+
+@track_kenya:
+	label/track/kenya/chumvini_rise1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/chumvini_rise2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			chumvini_rise
+	label/track/kenya/chumvini_rise2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/chumvini_rise2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			chumvini_rise
+	label/track/kenya/crocodile_point1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/crocodile_point2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			crocodile_point
+	label/track/kenya/crocodile_point2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/crocodile_point2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			crocodile_point
+	label/track/kenya/mwanda.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		mwanda
+	label/track/kenya/mwanda2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		mwanda
+	label/track/kenya/mwatate.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		mwatate
+	label/track/kenya/mwatate2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		mwatate
+	label/track/kenya/taita_hills.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		taita_hills
+	label/track/kenya/taita_hills2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/taita_hills2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			taita_hills
+	label/track/kenya/taveta_descent1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/taveta_descent2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			taveta_descent
+	label/track/kenya/taveta_descent2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/taveta_descent2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			taveta_descent
+	label/track/kenya/tsavo.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		tsavo
+	label/track/kenya/tsavo2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		tsavo
+	label/track/kenya/wundanyi_climb1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/wundanyi_climb2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			wundanyi_climb
+	label/track/kenya/wundanyi_climb2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/wundanyi_climb2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			wundanyi_climb
+	label/track/kenya/leopard_rock1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/leopard_rock1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			leopard_rock
+	label/track/kenya/yatta_ridge1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/yatta_ridge1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			yatta_ridge
+	label/track/kenya/garba_tula1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/kenya/garba_tula1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			garba_tula
+
+
+
+@track_michigan:
+	label/track/michigan/calumet_pass1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/calumet_pass2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			calumet_pass
+	label/track/michigan/calumet_pass2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/calumet_pass2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			calumet_pass
+	label/track/michigan/horizon_drive1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/horizon_drive2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			horizon_drive
+	label/track/michigan/horizon_drive2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/horizon_drive2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			horizon_drive
+	label/track/michigan/kenton_descent1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/kenton_descent2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			kenton_descent
+	label/track/michigan/kenton_descent2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/kenton_descent2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			kenton_descent
+	label/track/michigan/lighthouse_view1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/lighthouse_view2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			lighthouse_view
+	label/track/michigan/lighthouse_view2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/lighthouse_view2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			lighthouse_view
+	label/track/michigan/mountain_drive1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/mountain_drive2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			mountain_drive
+	label/track/michigan/mountain_drive2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/mountain_drive2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			mountain_drive
+	label/track/michigan/peninsula_run1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/peninsula_run2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			peninsula_run
+	label/track/michigan/peninsula_run2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/peninsula_run2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			peninsula_run
+	label/track/michigan/pine_ridge1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/pine_ridge2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			pine_ridge
+	label/track/michigan/pine_ridge2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/pine_ridge2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			pine_ridge
+	label/track/michigan/quincy_mine1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/quincy_mine2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			quincy_mine
+	label/track/michigan/quincy_mine2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/quincy_mine2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			quincy_mine
+	label/track/michigan/lake_gratiot1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/lake_gratiot1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			lake_gratiot
+	label/track/michigan/lake_superior1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/lake_superior1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			lake_superior
+	label/track/michigan/eagle_river1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/michigan/eagle_river1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			eagle_river
+
+
+
+
+@track_monte_carlo:
+	label/track/monte_carlo/baroque.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		baroque
+	label/track/monte_carlo/baroque2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		baroque
+	label/track/monte_carlo/bois_noir.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		bois_noir
+	label/track/monte_carlo/bois_noir2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/bois_noir2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			bois_noir
+	label/track/monte_carlo/col_de_turini1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/col_de_turini2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			col_de_turini
+	label/track/monte_carlo/col_de_turini2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/col_de_turini2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			col_de_turini
+	label/track/monte_carlo/col_st_roch1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/col_st_roch2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			col_st_roch
+	label/track/monte_carlo/col_st_roch2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/col_st_roch2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			col_st_roch
+	label/track/monte_carlo/gorges_de_pianon1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/gorges_de_pianon2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			gorges_de_pianon
+	label/track/monte_carlo/gorges_de_pianon2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/gorges_de_pianon2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			gorges_de_pianon
+	label/track/monte_carlo/lacet_de_blanc1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/lacet_de_blanc2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			lacet_de_blanc
+	label/track/monte_carlo/lacet_de_blanc2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/lacet_de_blanc2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			lacet_de_blanc
+	label/track/monte_carlo/route_des_anges1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/route_des_anges2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			label/track/monte_carlo/route_des_anges3.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+				route_des_anges
+	label/track/monte_carlo/route_des_anges2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monte_carlo/route_des_anges2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			label/track/monte_carlo/route_des_anges2_3.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+				route_des_anges
+	label/track/monte_carlo/sospel.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		sospel
+	label/track/monte_carlo/sospel2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		sospel
+
+
+
+@track_norway:
+	label/track/norway/kantvegen.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		kantvegen
+	label/track/norway/kantvegen2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		kantvegen
+	label/track/norway/aasstuevegen1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/aasstuevegen2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			aasstuevegen
+	label/track/norway/aasstuevegen2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/aasstuevegen2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			aasstuevegen
+	label/track/norway/birkebeinervegen1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/birkebeinervegen2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			birkebeinervegen
+	label/track/norway/birkebeinervegen2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/birkebeinervegen2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			birkebeinervegen
+	label/track/norway/hamar_descent1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/hamar_descent2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			hamar_descent
+	label/track/norway/hamar_descent2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/hamar_descent2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			hamar_descent
+	label/track/norway/litlikaupanger1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/litlikaupanger2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			litlikaupanger
+	label/track/norway/litlikaupanger2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/litlikaupanger2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			litlikaupanger
+	label/track/norway/paalsrudvegen1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/paalsrudvegen2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			paalsrudvegen
+	label/track/norway/paalsrudvegen2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/paalsrudvegen2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			paalsrudvegen
+	label/track/norway/rustadvegen1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/rustadvegen2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			rustadvegen
+	label/track/norway/rustadvegen2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/rustadvegen2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			rustadvegen
+	label/track/norway/skaarsetsaga1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/skaarsetsaga2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			skaarsetsaga
+	label/track/norway/skaarsetsaga2_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/skaarsetsaga2_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			skaarsetsaga
+	label/track/norway/vaaler_climb1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/vaaler_climb1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			vaaler_climb
+	label/track/norway/hafjell_descent1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/hafjell_descent1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			hafjell_descent
+	label/track/norway/nordsetervegen1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/norway/nordsetervegen1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			nordsetervegen
+
+
+
+@track_aspen:
+	label/track/aspen/lakeside.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		lakeside
+	label/track/aspen/lake_view1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/aspen/lake_view1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			lake_view
+	label/track/aspen/snowmass_sprint1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/aspen/snowmass_sprint1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			snowmass_sprint
+	label/track/aspen/snowmass_loop1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/aspen/snowmass_loop1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			snowmass_loop
+	label/track/aspen/eagle_hill_loop1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/aspen/eagle_hill_loop1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			eagle_hill_loop
+	label/track/aspen/eagle_hill_rise1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/aspen/eagle_hill_rise1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			eagle_hill_rise
+	label/track/aspen/brush_creek_dash1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/aspen/brush_creek_dash1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			label/track/aspen/brush_creek_dash1_3.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+				brush_creek_dash
+	label/track/aspen/brush_creek_sprint1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/aspen/brush_creek_sprint1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			label/track/aspen/brush_creek_sprint1_3.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+				brush_creek_sprint
+	label/track/aspen/buttermilk_descent1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/aspen/buttermilk_descent1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			buttermilk_descent
+	label/track/aspen/buttermilk_climb1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/aspen/buttermilk_climb1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			buttermilk_climb
+
+
+
+@track_la_coliseum:
+	label/track/la_coliseum/arena_sprint1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/la_coliseum/arena_sprint1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			arena_sprint
+	label/track/la_coliseum/exposition_drive1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/la_coliseum/exposition_drive1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			exposition_drive
+	label/track/la_coliseum/figueroa_loop1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/la_coliseum/figueroa_loop1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			figueroa_loop
+	label/track/la_coliseum/vermont_avenue1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/la_coliseum/vermont_avenue1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			vermont_avenue
+	label/track/la_coliseum/memorial_park1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/la_coliseum/memorial_park1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			memorial_park
+	label/track/la_coliseum/coliseum_air1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/la_coliseum/coliseum_air1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			coliseum_air
+	label/track/la_coliseum/olympic_field1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/la_coliseum/olympic_field1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			olympic_field
+	label/track/la_coliseum/exposition_plaza1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/la_coliseum/exposition_plaza1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			exposition_plaza
+
+
+
+
+@track_monaco:
+	label/track/monaco/casino_square1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/casino_square1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			casino_square
+	label/track/monaco/port_neuve1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/port_neuve1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			port_neuve
+	label/track/monaco/quai_antoine1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/quai_antoine1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			quai_antoine
+	label/track/monaco/sainte_devote1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/sainte_devote1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			sainte_devote
+	label/track/monaco/boulevard_albert1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/boulevard_albert1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			boulevard_albert
+	label/track/monaco/port_hercule1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/port_hercule1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			port_hercule
+	label/track/monaco/palace_square1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/palace_square1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			palace_square
+	label/track/monaco/harbour_view1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/harbour_view1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			harbour_view
+	label/track/monaco/marina_face_off1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/marina_face_off1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			marina_face_off
+	label/track/monaco/marina_duel1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/monaco/marina_duel1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			marina_duel
+
+
+
+@track_shibuya:
+	label/track/shibuya/hachiko_square1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/shibuya/hachiko_square1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			hachiko_square
+	label/track/shibuya/sakuragaokacho1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/shibuya/sakuragaokacho1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			sakuragaokacho
+	label/track/shibuya/udagawacho1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/shibuya/udagawacho1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			udagawacho
+	label/track/shibuya/yamanote_line1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/shibuya/yamanote_line1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			yamanote_line
+
+
+
+@track_smelter:
+	label/track/smelter/county_loop1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/county_loop1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			county_loop
+	label/track/smelter/houghton_sprint1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/houghton_sprint1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			houghton_sprint
+	label/track/smelter/portage_canal1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/portage_canal1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			portage_canal
+	label/track/smelter/warterfront_park1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/warterfront_park1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			warterfront_park
+	label/track/smelter/copper_run1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/copper_run1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			copper_run
+	label/track/smelter/maple_woods1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/maple_woods1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			maple_woods
+	label/track/smelter/atlantic_mill1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/atlantic_mill1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			atlantic_mill
+	label/track/smelter/coles_creek1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/coles_creek1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			coles_creek
+	label/track/smelter/dredger_duel1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/dredger_duel1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			dredger_duel
+	label/track/smelter/furnace_duel1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/smelter/furnace_duel1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			furnace_duel
+
+
+
+@track_dc_compound:
+	label/track/dc_compound/parking_lot1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/dc_compound/parking_lot1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			parking_lot
+	label/track/dc_compound/depot.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		depot
+	label/track/dc_compound/waterfront.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		waterfront
+	label/track/dc_compound/powerstation1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/dc_compound/powerstation1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			powerstation
+	label/track/dc_compound/allareas.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		allareas
+	label/track/dc_compound/parkinglot_depot1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/track/dc_compound/parkinglot_depot1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			parking_lot_depot
+
+
+
+
+@vehicle_class:
+	label/vehicle_class/60s.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s60
+	label/vehicle_class/60s2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s60
+	label/vehicle_class/70s.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s70
+	label/vehicle_class/70s2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s70
+	label/vehicle_class/80s.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s80
+	label/vehicle_class/80s2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s80
+	label/vehicle_class/90s.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s90
+	label/vehicle_class/90s2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s90
+	label/vehicle_class/group_b.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		group_b
+	label/vehicle_class/group_b2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		group_b
+	label/vehicle_class/open.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		open
+	label/vehicle_class/open2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		open
+	label/vehicle_class/pro.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		pro
+	label/vehicle_class/pro2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		pro
+	label/vehicle_class/raid.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		raid
+	label/vehicle_class/raid2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		raid
+	label/vehicle_class/s2000.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s2000
+	label/vehicle_class/s20002.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		s2000
+	label/vehicle_class/s20002.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/vehicle_class/90s2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			s2000_s90
+	label/vehicle_class/80s2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/vehicle_class/group_b2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			s80_group_b
+	label/vehicle_class/60s2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/vehicle_class/70s2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			s60_s70
+	label/vehicle_class/rallycross.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		rallycross
+	label/vehicle_class/rallyx_groupb1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/vehicle_class/rallyx_groupb1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			rallyx_group_b
+	label/vehicle_class/mordern.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		mordern
+	label/vehicle_class/classic.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		classic
+	label/vehicle_class/classic.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/vehicle_class/mordern.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			classic_mordern
+	label/vehicle_class/trucks.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		trucks
+	label/vehicle_class/buggies.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		buggies
+	label/vehicle_class/buggies.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/vehicle_class/trucks.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			trucks_buggies
+
+
+
+@conditions:
+	label/conditions/evening_sun1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/conditions/evening_sun1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			evening_sun
+	label/conditions/morning_sun1_1.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		label/conditions/morning_sun1_2.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+			morning_sun
+	label/conditions/night.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		night
+	label/conditions/snow.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		snow
+	label/conditions/rain.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		rain
+	label/conditions/wet.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		wet
+	label/conditions/fog.jpg, templatematch, threshold_0.7, timetrial_menu_hsv, timetrial_menu_roi
+		fog
+
+
+@all_detect:
+	@discipline
+	@location
+	@track_aspen
+	@track_dc_compound
+	@track_finland
+	@track_kenya
+	@track_la_coliseum
+	@track_michigan
+	@track_monaco
+	@track_monte_carlo
+	@track_norway
+	@track_shibuya
+	@track_smelter
+	@vehicle_class
+	@conditions		
+

@@ -1,0 +1,418 @@
+
+
+timetrial_menu:
+	parent enterchild=1 sceneid=01 
+
+	discipline sidesel=1 delay=0 sceneid_inherit=1 sceneid_child_inherit=1
+		rally
+		rallycross
+		trailblazer
+		freestyle_gymkhana
+		landrush
+		head2head
+		drift_showcase
+		smash_attack
+		speed_run
+		gymkhana_sprint
+		gymkhana_attack
+
+	location sidesel=1 delay=0 sceneid_inherit=1 sceneid_child_inherit=1
+		finland
+		kenya
+		michigan
+		monte_carlo
+		norway
+		aspen
+		la_coliseum
+		monaco
+		shibuya
+		smelter
+		dc_compound
+
+	track sidesel=1 delay=0 sceneid_inherit=1 sceneid_child_inherit=1
+		tupasentie
+		hanisjarventie
+		lankamaa
+		isorjarvi
+		alhojarvi
+		kaatselka
+		kakaristo
+		mutanen
+		paijanne_approach
+		vaaksy_run
+		evijarvie
+
+		mwatate
+		taveta_descent
+		crocodile_point
+		wundanyi_climb
+		tsavo
+		chumvini_rise
+		mwanda
+		taita_hills
+		leopard_rock
+		yatta_ridge
+		garba_tula
+
+		mountain_drive
+		peninsula_run
+		quincy_mine
+		kenton_descent
+		horizon_drive
+		calumet_pass
+		lighthouse_view
+		pine_ridge
+		lake_gratiot
+		lake_superior
+		eagle_river
+
+		col_st_roch
+		baroque
+		gorges_de_piaon
+		lacet_de_blanc
+		sospel
+		col_de_turini
+		bois_noir
+		route_des_anges
+
+		kantvegen
+		litlikaupanger
+		paalsrudvegen
+		aasstuevegen
+		hamar_descent
+		birkebeinervegen
+		skaarsetsaga
+		rustadvegen
+		vaaler_climb
+		hafjell_descent
+		nordsetervegen
+		bobsleigh_run
+
+
+		lakeside
+		lake_view
+		snowmass_sprint
+		snowmass_loop
+		eagle_hill_rise
+		eagle_hill_loop
+		brush_creek_sprint
+		brush_creek_dash
+		buttermilk_descent
+		buttermilk_climb
+
+		
+		exposition_drive
+		figueroa_loop
+		vermont_avenue
+		arena_sprint
+		memorial_park
+		coliseum_air
+		olympic_field
+		exposition_plaza
+
+
+		casino_square
+		port_neuve
+		sainte_devote
+		quai_antoine
+		boulevard_albert
+		port_hercule
+		palace_square
+		harbour_view
+		marina_face_off
+		marina_duel
+
+		sakuragaokacho
+		udagawacho
+		yamanote_line
+		hachiko_square
+
+		county_loop
+		portage_canal
+		houghton_sprint
+		waterfront_park
+		copper_run
+		maple_woods
+		atlantic_mill
+		coles_creek
+		dredger_duel
+		furnace_duel
+
+		parking_lot
+		depot
+		waterfront
+		power_station
+		all_areas
+		parking_log_depot
+
+
+	vehicle_class sidesel=1 delay=0 sceneid_inherit=1 sceneid_child_inherit=1
+		pro
+		open
+		s2000
+		s90
+		group_b
+		s80
+		s70
+		s60
+		raid
+		s2000_s90
+		s80_group_b
+		s60_s70
+		rallycross
+		rallyx_group_b
+		modern
+		classic
+		classic_mordern
+		trucks
+		buggies
+		trucks_buggies
+
+
+
+
+
+
+singlerace_menu:
+	parent enterchild=1 sceneid=01 
+
+	discipline sidesel=1 delay=0 sceneid_inherit=1 sceneid_child_inherit=1
+		rally
+		rallycross
+		trailblazer
+		gymkhana
+		landrush
+		head2head
+
+	location sidesel=1 delay=0 sceneid_inherit=1 sceneid_child_inherit=1
+		finland
+		kenya
+		michigan
+		monte_carlo
+		norway
+		aspen
+		la_coliseum
+		monaco
+		shibuya
+		smelter
+		dc_compound
+
+	track sidesel=1 delay=0 sceneid_inherit=1 sceneid_child_inherit=1
+		tupasentie
+		hanisjarventie
+		lankamaa
+		isorjarvi
+		alhojarvi
+		kaatselka
+		kakaristo
+		mutanen
+		paijanne_approach
+		vaaksy_run
+		evijarvie
+
+		mwatate
+		taveta_descent
+		crocodile_point
+		wundanyi_climb
+		tsavo
+		chumvini_rise
+		mwanda
+		taita_hills
+		leopard_rock
+		yatta_ridge
+		garba_tula
+
+		mountain_drive
+		peninsula_run
+		quincy_mine
+		kenton_descent
+		horizon_drive
+		calumet_pass
+		lighthouse_view
+		pine_ridge
+		lake_gratiot
+		lake_superior
+		eagle_river
+
+		col_st_roch
+		baroque
+		gorges_de_piaon
+		lacet_de_blanc
+		sospel
+		col_de_turini
+		bois_noir
+		route_des_anges
+
+		kantvegen
+		litlikaupanger
+		paalsrudvegen
+		aasstuevegen
+		hamar_descent
+		birkebeinervegen
+		skaarsetsaga
+		rustadvegen
+		vaaler_climb
+		hafjell_descent
+		nordsetervegen
+		bobsleigh_run
+
+
+		lakeside
+		lake_view
+		snowmass_sprint
+		snowmass_loop
+		eagle_hill_rise
+		eagle_hill_loop
+		brush_creek_sprint
+		brush_creek_dash
+		buttermilk_descent
+		buttermilk_climb
+
+		
+		exposition_drive
+		figueroa_loop
+		vermont_avenue
+		arena_sprint
+		memorial_park
+		coliseum_air
+		olympic_field
+		exposition_plaza
+
+
+		casino_square
+		port_neuve
+		sainte_devote
+		quai_antoine
+		boulevard_albert
+		port_hercule
+		palace_square
+		harbour_view
+		marina_face_off
+		marina_duel
+
+		sakuragaokacho
+		udagawacho
+		yamanote_line
+		hachiko_square
+
+		county_loop
+		portage_canal
+		houghton_sprint
+		waterfront_park
+		copper_run
+		maple_woods
+		atlantic_mill
+		coles_creek
+		dredger_duel
+		furnace_duel
+
+		parking_lot
+		depot
+		waterfront
+		power_station
+		all_areas
+		parking_log_depot
+
+
+	vehicle_class sidesel=1 delay=0 sceneid_inherit=1 sceneid_child_inherit=1
+		pro
+		open
+		s2000
+		s90
+		group_b
+		s80
+		s70
+		s60
+		raid
+		s2000_s90
+		s80_group_b
+		s60_s70
+		rallycross
+		rallyx_group_b
+		modern
+		classic
+		classic_mordern
+		trucks
+		buggies
+		trucks_buggies
+
+
+
+	conditions sidesel=1 delay=0 sceneid_inherit=1 sceneid_child_inherit=1
+		evening_sun
+		night
+		morning_sun
+		rain
+		wet
+		fog
+		snow
+
+
+
+timetrial_ingame_menu:
+	parent key=no
+
+	race noup=1 noproc=1 delay=8
+		timetrial_game noup=1 noproc=1 delay=1
+			timetrial_ingame_pause_menu key=esc circular=1
+				continue
+				restart delay=0.5
+					timetrial_game noproc=1
+				restart_via_service_area
+				reset_vehicle
+				replay
+				ghost_options
+				options
+				end_session delay=0.5
+					timetrial_ingame_result sidemenu=1 delay=2
+						quit noproc=1 delay=6
+							timetrial_menu
+						restart_race
+						view_replay
+			finish auto=1
+				timetrial_result
+					quit noproc=1
+						timetrial_menu
+					restart_race
+					view_replay
+	ghosts
+	
+	assists sidesel=1 noproc=1 sceneid_child_inherit=1
+		casual
+		intermediate
+		advanced
+		
+	vehicle_setup
+
+
+
+singlerace_ingame_menu:
+	parent key=no
+
+	race noup=1 noproc=1 delay=8
+		singlerace_game noup=1 noproc=1
+			singlerace_ingame_pause_menu key=esc circular=1
+				continue
+				restart delay=0.5
+					singlerace_game noproc=1
+				restart_via_service_area
+				reset_vehicle
+				replay
+				options
+				retire delay=0.5
+					singlerace_menu
+			finish auto=1
+				singlerace_result1
+					continue
+						singlerace_result2
+							singlerace_menu
+					restart_race
+					view_replay
+	entrants
+
+	difficulty_and_assists sidesel=1 noproc=1 sceneid_child_inherit=1
+		casual
+		intermediate
+		advanced
+
+	vehicle_setup

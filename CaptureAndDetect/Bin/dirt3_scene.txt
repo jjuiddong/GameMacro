@@ -1,0 +1,291 @@
+
+gray = 1
+log = 0
+debug = 0
+matchtype = 1
+
+
+label_title1 = label/dirt3_title1.jpg
+label_title2 = label/dirt3_title_temp2.jpg
+label_title21 = label/dirt3_title_temp21.jpg
+label_title3 = label/dirt3_title_temp3.jpg
+label_title4 = label/dirt3_title_temp4.jpg
+label_title5 = label/dirt3_title_temp5.jpg
+label_title6 = label/dirt3_title_temp6.jpg
+label_title7 = label/dirt3_title_temp7.jpg
+label_title8 = label/dirt3_title_temp8.jpg
+
+
+label_main = label/dirt3_main.jpg
+
+label_loadprofile = label/dirt3_loadprofile_temp.jpg
+
+label_autosave = label/dirt3_autosavewarning_temp1.jpg
+
+
+label_option1 = label/dirt3_option1.jpg
+label_option2 = label/dirt3_option2.jpg
+label_option3 = label/dirt3_option3.jpg
+label_option4 = label/dirt3_option4.jpg
+label_option5 = label/dirt3_option5.jpg
+label_option6 = label/dirt3_option6.jpg
+
+
+label_single1 = label/dirt3_single_temp1.jpg
+label_single2 = label/dirt3_single_temp2.jpg
+label_single3 = label/dirt3_single_temp3.jpg
+label_single4 = label/dirt3_single_temp4.jpg
+label_single5 = label/dirt3_single_temp5.jpg
+label_single6 = label/dirt3_single_temp6.jpg
+label_single7 = label/dirt3_single_temp7.jpg
+label_single8 = label/dirt3_single_temp8.jpg
+label_single9 = label/dirt3_single_temp9.jpg
+label_single10 = label/dirt3_single_temp10.jpg
+label_single11 = label/dirt3_single_temp11.jpg
+label_single12 = label/dirt3_single_temp12.jpg
+
+label_content_restricted = label/dirt3_contentrestricted_temp1.jpg
+
+
+label_timetrial_menu1 = label/dirt3_timetrial_menu_temp1.jpg
+label_timetrial_menu2 = label/dirt3_timetrial_menu_temp2.jpg
+label_timetrial_menu3 = label/dirt3_timetrial_menu_temp3.jpg
+
+label_timetrial_ingame_menu = label/dirt3_timetrial_ingame_menu_temp1.jpg
+
+label_singlerace_menu1 = label/dirt3_singlerace_menu_temp1.jpg
+label_singlerace_menu2 = label/dirt3_singlerace_menu_temp2.jpg
+
+label_singlerace_ingame_menu = label/dirt3_singlerace_ingame_menu_temp1.jpg
+
+
+label_ghost_select1 = label/dirt3_ghostsel_temp1.jpg
+label_ghost_select2 = label/dirt3_ghostsel_temp2.jpg
+
+label_vehicle_select1 = label/dirt3_vehiclesel_temp1.jpg
+label_vehicle_select2 = label/dirt3_vehiclesel_temp2.jpg
+label_vehicle_select3 = label/dirt3_vehiclesel_temp3.jpg
+label_vehicle_select4 = label/dirt3_vehiclesel_temp4.jpg
+
+label_livery_select1 = label/dirt3_liverysel_temp1.jpg
+label_livery_select2 = label/dirt3_liverysel_temp2.jpg
+label_livery_select3 = label/dirt3_liverysel_temp3.jpg
+label_livery_select4 = label/dirt3_liverysel_temp4.jpg
+
+
+
+
+id_title = title
+id_loadprofile = loadprofile
+id_autosave_warning = autosave_warning
+id_main = main
+id_option = option
+id_single = singleplayer
+id_content_restricted = content_restricted
+id_timetrial_menu = timetrial_menu
+id_timetrial_ingame_menu = timetrial_ingame_menu
+id_singlerace_menu = singlerace_menu
+id_singlerace_ingame_menu = singlerace_ingame_menu
+id_ghost_select = ghost_select
+id_vehicle_select = vehicle_select
+id_livery_select = livery_select
+
+
+
+@title1:
+	label_title3, templatematch, threshold_0.7
+		label_title4, templatematch, threshold_0.7
+			id_title
+		label_title7, templatematch, threshold_0.7
+			id_title
+	label_title5, templatematch, threshold_0.7
+		label_title4, templatematch, threshold_0.7
+			id_title
+		label_title7, templatematch, threshold_0.7
+			id_title
+	label_title6, templatematch, threshold_0.7
+		label_title4, templatematch, threshold_0.7
+			id_title
+		label_title7, templatematch, threshold_0.7
+			id_title
+	label_title8, templatematch, threshold_0.7
+		label_title4, templatematch, threshold_0.7
+			id_title
+		label_title7, templatematch, threshold_0.7
+			id_title
+
+
+@loadprofile:
+	label_loadprofile, templatematch, threshold_0.7
+		id_loadprofile
+
+
+@autosave_warning:
+	label_autosave, templatematch, threshold_0.7
+		id_autosave_warning
+
+
+@title2:
+	label_title2, templatematch, threshold_0.7
+		id_title
+
+	label_title21, templatematch, threshold_0.7
+		id_title
+
+
+
+@title:
+	dummy
+		@title1
+	dummy
+		@title2
+
+
+
+
+
+
+@main:
+	label_main
+		id_main
+
+
+
+@singleplayer:
+	label_single1, templatematch, threshold_0.7
+		label_single2, templatematch, threshold_0.7
+			id_single
+		label_single6, templatematch, threshold_0.7
+			id_single
+		label_single10, templatematch, threshold_0.7
+			id_single
+		label_single11, templatematch, threshold_0.7
+			id_single
+		label_single12, templatematch, threshold_0.7
+			id_single
+
+	label_single3, templatematch, threshold_0.7
+		label_single4, templatematch, threshold_0.7
+			id_single
+
+	label_single5, templatematch, threshold_0.7
+		label_single6, templatematch, threshold_0.7
+			id_single
+		label_single7, templatematch, threshold_0.7
+			id_single
+		label_single8, templatematch, threshold_0.7
+			id_single
+		label_single9, templatematch, threshold_0.7
+			id_single
+		label_single11, templatematch, threshold_0.7
+			id_single
+
+
+@content_restricted:
+	label_content_restricted, templatematch, threshold_0.7
+		id_content_restricted
+
+
+@timetrial_menu:
+	label_timetrial_menu1, templatematch, threshold_0.7
+		id_timetrial_menu
+	label_timetrial_menu2, templatematch, threshold_0.7
+		id_timetrial_menu
+	label_timetrial_menu3, templatematch, threshold_0.7
+		id_timetrial_menu
+
+
+
+@ghost_select:
+	label_ghost_select1, templatematch, threshold_0.7
+		id_ghost_select
+	label_ghost_select2, templatematch, threshold_0.7
+		id_ghost_select
+
+
+
+@vehicle_select:
+	label_vehicle_select1, templatematch, threshold_0.68
+		id_vehicle_select
+	label_vehicle_select2, templatematch, threshold_0.68
+		id_vehicle_select
+	label_vehicle_select3, templatematch, threshold_0.68
+		id_vehicle_select
+
+
+@livery_select:
+	label_livery_select1, templatematch, threshold_0.7
+		id_livery_select
+	label_livery_select2, templatematch, threshold_0.7
+		id_livery_select
+	label_livery_select3, templatematch, threshold_0.7
+		id_livery_select
+	label_livery_select4, templatematch, threshold_0.7
+		id_livery_select
+
+
+@timetrial_ingame_menu:
+	label_timetrial_ingame_menu, templatematch, threshold_0.7
+		id_timetrial_ingame_menu
+
+
+@singlerace_menu:
+	label_singlerace_menu1, templatematch, threshold_0.7
+		id_singlerace_menu
+	label_singlerace_menu2, templatematch, threshold_0.7
+		id_singlerace_menu
+
+
+@singlerace_ingame_menu:
+	label_singlerace_ingame_menu, templatematch, threshold_0.7
+		id_singlerace_ingame_menu
+
+
+@option:
+	label_option1
+		id_option
+	label_option2
+		id_option
+	label_option3
+		id_option
+	label_option4
+		id_option
+	label_option5
+		id_option
+	label_option6
+		id_option
+
+
+
+@detect_scene:
+	dummy
+		@title1
+	dummy
+		@loadprofile
+	dummy
+		@autosave_warning
+	dummy
+		@content_restricted
+	dummy
+		@vehicle_select
+	dummy
+		@livery_select
+	dummy
+		@timetrial_menu
+	dummy
+		@ghost_select
+	dummy
+		@singlerace_menu
+	dummy
+		@singlerace_ingame_menu
+	dummy
+		@timetrial_ingame_menu
+	dummy
+		@singleplayer
+	dummy
+		@title2
+	dummy
+		@main
+	dummy
+		@option
+

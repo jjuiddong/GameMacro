@@ -1,0 +1,20 @@
+
+
+script_filename = dirt3_scene.txt
+script_exec_label = @detect_scene
+flow_filename = flow.txt
+flow_command = flowcmd.txt
+
+
+#F9 = 120
+#F10 = 121
+#F11 = 122
+capturekey = 120
+
+
+ip = 192.168.0.6
+#ip = 192.168.0.10
+#ip = 127.0.0.1
+port = 8000
+
+

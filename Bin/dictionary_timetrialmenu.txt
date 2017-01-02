@@ -1,0 +1,27 @@
+
+word:
+discipline
+location
+track
+vehicle class		{ vehicle_class }
+laps
+
+conditions evening sun			{ conditions }
+conditions night			    { conditions }
+conditions morning sun			{ conditions }
+conditions rain			    	{ conditions }
+conditions wet			    	{ conditions }
+conditions fog			    	{ conditions }
+conditions snow			    	{ conditions }
+
+
+
+ambiguous:
+i - I - | - L - J - H
+C - G
+V - Y
+s - 5 - 8
+R - B
+0 - O - Q
+$ - S
+

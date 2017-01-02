@@ -1,0 +1,75 @@
+
+gray = 1
+log = 0
+debug = 1
+
+player_label = label/player2_label.png
+
+label_num1 = label/num1_label.png
+label_num2 = label/num2_label.png
+label_num3 = label/num3_label.png
+label_num4 = label/num4_label.png
+label_num5 = label/num5_label.png
+label_num6 = label/num6_label.png
+label_num7 = label/num7_label.png
+label_num8 = label/num8_label.png
+label_num1_1 = label/num1_1_label.png
+label_num2_1 = label/num2_1_label.png
+label_num3_1 = label/num3_1_label.png
+label_num4_1 = label/num4_1_label.png
+label_num5_1 = label/num5_1_label.png
+label_num6_1 = label/num6_1_label.png
+label_num7_1 = label/num7_1_label.png
+label_num8_1 = label/num8_1_label.png
+
+
+label_id1 = rank1
+label_id2 = rank2
+label_id3 = rank3
+label_id4 = rank4
+label_id5 = rank5
+label_id6 = rank6
+label_id7 = rank7
+label_id8 = rank8
+
+
+src_result_roi1 = 100, 90, 600, 400
+src_result_roi2 = -100, 0, 300, 30, +
+
+
+detect_rank:
+	player_label, src_result_roi1, threshold_0.9
+		label_num1, src_result_roi2
+			label_id1
+		label_num2, src_result_roi2
+			label_id2
+		label_num3, src_result_roi2
+			label_id3
+		label_num4, src_result_roi2
+			label_id4
+		label_num5, src_result_roi2
+			label_id5
+		label_num6, src_result_roi2
+			label_id6
+		label_num7, src_result_roi2
+			label_id7
+		label_num8, src_result_roi2
+			label_id8
+
+		label_num1_1, src_result_roi2
+			label_id1
+		label_num2_1, src_result_roi2
+			label_id2
+		label_num3_1, src_result_roi2
+			label_id3
+		label_num4_1, src_result_roi2
+			label_id4
+		label_num5_1, src_result_roi2
+			label_id5
+		label_num6_1, src_result_roi2
+			label_id6
+		label_num7_1, src_result_roi2
+			label_id7
+		label_num8_1, src_result_roi2
+			label_id8
+

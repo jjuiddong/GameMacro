@@ -1,0 +1,7 @@
+
+
+@test:
+	label/warthunder_tobattle_hsv.jpg hsv1=0,100,100,90,255,255 
+		tobattle1
+	label/warthunder_tobattle.jpg
+		tobattle2

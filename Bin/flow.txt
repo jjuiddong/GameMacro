@@ -1,0 +1,31 @@
+
+include sub_menu.txt
+
+
+menutree:
+	title
+		loadprofile delay=1
+			autosave_warning delay=1
+				main delay=2
+					dirt_tour
+					multiplayer
+					singleplayer delay=2
+						timetrial_menu delay=1
+							ghost_select nomenu=1 delay=11
+								vehicle_select delay=1.5
+									livery_select delay=1
+										loading noproc=1 delay=13
+											loading2 noproc=1 delay=7 
+												timetrial_ingame_menu
+						singlerace_menu delay=2
+							vehicle_select nomenu=1 delay=1.5
+								livery_select delay=1
+									loading delay=13 noproc=1
+										loading2 noproc=1 delay=7
+											singlerace_ingame_menu
+					my_dirt
+					options
+					exit
+
+				title_quit
+

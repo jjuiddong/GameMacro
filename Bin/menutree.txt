@@ -1,0 +1,51 @@
+
+menutree:
+	title, delay_2
+		loadprofile, delay_2
+			autosave_warning, delay_1
+				main, delay_3
+					dirt_tour
+					multiplayer
+					singleplayer, delay_3
+						timetrial_menu
+							content_restricted
+								ghost_select
+									vehicle_select
+										livery_select
+											loading, delay_20
+												timetrial_ingame_menu,1
+													race
+														timetrial_game,1
+															timetrial_ingame_pause_menu
+															finish
+																timetrial_result
+																	quit
+																		timetrial_menu
+																	restart_race
+																	view_replay
+													ghosts
+													assists
+													vehicle_setup
+						singlerace_menu
+							content_restricted
+								vehicle_select
+									livery_select
+										loading, delay_20
+											singlerace_ingame_menu,1
+												race
+													singlerace_game,1
+														singlerace_ingame_pause_menu
+														finish
+															singlerace_result1
+																continue
+																	singlerace_result2
+																		singlerace_menu
+																restart_race
+																view_replay
+												entrants
+												difficulty_and_assists
+												vehicle_setup
+					my_dirt
+					option
+					exit
+

@@ -1,0 +1,195 @@
+
+word:
+discipline rally			{ rally }
+discipline rally cross			{ rallycross }
+discipline rallycross			{ rallycross }
+discipline trailblazer			{ trailblazer }
+discipline freestyle gymkhana		{ freestyle_gymkhana }
+discipline landrush			{ landrush }
+discipline head2head			{ head2head }
+discipline drift showcase		{ drift_showcase }
+discipline smash attack			{ smash_attack }
+discipline speed run			{ speed_run }
+discipline gymkhana sprint		{ gymkhana_sprint }
+discipline gymkhana attack		{ gymkhana_attack }
+discipline gymkhana			{ gymkhana }
+
+
+location finland			{ finland }
+location kenya				{ kenya }
+location michigan			{ michigan }
+location monte carlo			{ monte_carlo }
+location norway				{ norway }
+location aspen				{ aspen }
+location la coliseum			{ la_coliseum }
+location monaco				{ monaco }
+location shibuya			{ shibuya }
+location smelter			{ smelter }
+location dc compound			{ dc_compound }
+
+track tupasentie			{ tupasentie }
+track hanisjarventie			{  hanisjarventie }
+track lankamaa				{  lankamaa }
+track isorjarvi				{  isorjarvi }
+track alhojarvi				{  alhojarvi }
+track kaatselka				{  kaatselka }
+track kakaristo				{  kakaristo }
+track mutanen				{  mutanen }
+track paijanne approach			{  paijanne_approach }
+track vaaksy run			{  vaaksy_run }
+track evijarvie				{  evijarvie }
+
+track mwatate				{  mwatate }
+track taveta descent			{  taveta_descent }
+track crocodile point			{  crocodile_point }
+track wundanyi climb			{  wundanyi_climb }
+track tsavo				{  tsavo }
+track chumvini rise			{  chumvini_rise }
+track mwanda				{  mwanda }
+track taita hills			{  taita_hills }
+track leopard rock			{  leopard_rock }
+track yatta ridge			{  yatta_ridge }
+track garba tula			{  garba_tula }
+
+track mountain drive			{  mountain_drive }
+track peninsula run			{  peninsula_run }
+track quincy mine			{  quincy_mine }
+track kenton descent			{  kenton_descent }
+track horizon drive			{  horizon_drive }
+track calumet pass			{  calumet_pass }
+track lighthouse view			{  lighthouse_view }
+track pine ridge			{  pine_ridge }
+track lake gratiot			{  lake_gratiot }
+track lake superior			{  lake_superior }
+track eagle river			{  eagle_river }
+
+track col st roch			{  col_st_roch }
+track baroque				{  baroque }
+track gorges de piaon			{  gorges_de_piaon }
+track lacet de blanc			{  lacet_de_blanc }
+track sospel				{  sospel }
+track col de turini			{  col_de_turini }
+track bois noir				{  bois_noir }
+track route des anges			{  route_des_anges }
+
+track kantvegen				{  kantvegen }
+track litlikaupanger			{  litlikaupanger }
+track paalsrudvegen			{  paalsrudvegen }
+track aasstuevegen			{  aasstuevegen }
+track hamar descent			{  hamar_descent }
+track birkebeinervegen			{  birkebeinervegen }
+track skaarsetsaga			{  skaarsetsaga }
+track rustadvegen			{  rustadvegen }
+track vaaler climb			{  vaaler_climb }
+track hafjell descent			{  hafjell_descent }
+track nordsetervegen			{  nordsetervegen }
+track bobsleigh run			{  bobsleigh_run }
+
+track lakeside				{  lakeside }
+track lake view				{  lake_view }
+track snowmass sprint			{  snowmass_sprint }
+track snowmass loop			{  snowmass_loop }
+track eagle hill rise			{  eagle_hill_rise }
+track eagle hill loop			{  eagle_hill_loop }
+track brush creek sprint		{  brush_creek_sprint }
+track brush creek dash			{  brush_creek_dash }
+track buttermilk descent		{  buttermilk_descent }
+track buttermilk climb			{  buttermilk_climb }
+
+track exposition drive			{  exposition_drive }
+track figueroa loop			{  figueroa_loop }
+track vermont avenue			{  vermont_avenue }
+track arena sprint			{  arena_sprint }
+track memorial park			{  memorial_park }
+track coliseum air			{  coliseum_air }
+track olympic field			{  olympic_field }
+track exposition plaza			{  exposition_plaza }
+
+track casino square			{  casino_square }
+track port neuve			{  port_neuve }
+track sainte devote			{  sainte_devote }
+track quai antoine			{  quai_antoine }
+track boulevard albert			{  boulevard_albert }
+track port hercule			{  port_hercule }
+track palace square			{  palace_square }
+track harbour view			{  harbour_view }
+track marina face off			{  marina_face_off }
+track marina duel			{  marina_duel }
+
+track sakuragaokacho			{  sakuragaokacho }
+track udagawacho			{  udagawacho }
+track yamanote line			{  yamanote_line }
+track hachiko square			{  hachiko_square }
+
+track county loop			{  county_loop }
+track portage canal			{  portage_canal }
+track houghton sprint			{  houghton_sprint }
+track waterfront park			{  waterfront_park }
+track copper run			{  copper_run }
+track maple woods			{  maple_woods }
+track atlantic mill			{  atlantic_mill }
+track coles creek			{  coles_creek }
+track dredger duel			{  dredger_duel }
+track furnace duel			{  furnace_duel }
+
+track parking lot			{  parking_lot }
+track depot				{  depot }
+track waterfront			{  waterfront }
+track power station			{  power_station }
+track all areas				{  all_areas }
+track parking lot depot			{  parking_lot_depot }
+
+vehicle class pro			{ pro }
+vehicle class open			{ open }
+vehicle class s2000			{ s2000 }
+vehicle class 90s			{ s90 }
+vehicle class group b			{ group_b }
+vehicle class 80s			{ s80 }
+vehicle class 70s			{ s70 }
+vehicle class 60s			{ s60 }
+vehicle class raid			{ raid }
+vehicle class s2000 90s			{ s2000_s90 }
+vehicle class 80s group b		{ s80_group_b }
+vehicle class 60s 70s			{ s60_s70 }
+vehicle class rallycross		{ rallycross }
+vehicle class rallyx group b		{ rallyx_group_b }
+vehicle class modern			{ modern }
+vehicle class classic			{ classic }
+vehicle class classic modern		{ classic_modern }
+vehicle class trucks			{ trucks }
+vehicle class buggies			{ buggies }
+vehicle class trucks buggies		{ trucks_buggies }
+
+conditions evening sun			{ evening_sun }
+conditions night			{ night }
+conditions morning sun			{ morning_sun }
+conditions rain				{ rain }
+conditions wet				{ wet }
+conditions fog				{ fog }
+conditions snow				{ snow }
+
+experience level casual			{ casual }
+experience level intermediate		{ intermediate }
+experience level advanced		{ advanced }
+
+
+continue
+restart
+restart via service area
+reset vehicle
+replay
+ghost options
+options
+end session
+retire
+
+
+ambiguous:
+i - I - | - L - J - H
+C - G
+V - Y
+s - 5 - 8
+R - B
+0 - O - Q
+$ - S
+

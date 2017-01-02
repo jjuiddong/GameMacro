@@ -1,0 +1,38 @@
+
+Script Command List 
+-------------------------------------------------------------------------------
+
+img = @capture_select 
+templatematch = @label_select 
+featurematch = @label_select 
+imagematch = @tree_label 
+imagematch2 = @tree_label 
+
+reload 
+gray 
+erode 
+dilate  
+roi = 0, 0, 100, 100 
+rect = 0, 0, 100, 100 
+scale = 1.5 
+	-> dst *= num 
+threshold = 100 
+adapthreshold = blocksize, threshold 
+invert = threshold 
+
+cvt = bgr-hsv/bgr-hls/bgr-gray/hsv-bgr/hls-bgr/gray-bgr 
+hsv = 80, 100, 100, 90, 255, 255 
+	-> bgr-hsv; inRange(80, 100, 100, 90, 255, 255) 
+hls = 80, 100, 100, 90, 255, 255 
+	-> bgr-hls; inRange(80, 100, 100, 90, 255, 255) 
+bgr = 10, 20, 30 
+	-> dst &= scalar(10,20,30) 
+
+acc 
+hough 
+canny = threshold 
+findcontours = approxPolyDP_alpha 
+deskew = 0.005, debug_enable 
+
+tess = dictionary.txt 
+	-> tesseract 

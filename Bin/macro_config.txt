@@ -1,0 +1,9 @@
+
+
+bindport = 10000
+matchscript_scene = dirt3_scene.txt
+matchscript_track = dirt3_trackname.txt
+menu_script = flow.txt
+
+
+

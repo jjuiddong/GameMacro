@@ -1,0 +1,11 @@
+#singlerace_result2
+singlerace_menu
+
+#retire
+#singlerace_menu
+
+#singlerace_ingame_pause_menu
+#end_session
+#timetrial_menu
+
+

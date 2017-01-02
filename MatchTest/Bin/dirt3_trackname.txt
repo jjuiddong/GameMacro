@@ -1,0 +1,125 @@
+
+gray = 1
+log = 0
+debug = 0
+
+finland_label = label/finland_label.jpg
+kenya_label = label/kenya_label.jpg
+
+label_1 = label/finland_alhojarvi_label.jpg
+label_2 = label/finland_hanisjarventie_label.jpg
+label_3 = label/finland_isojarvi_label.jpg
+label_4 = label/finland_kaatselk_label.jpg
+label_5 = label/finland_kakaristo_label.jpg
+label_6 = label/finland_lankamaa_label.jpg
+label_7 = label/finland_mutanen_label.jpg
+label_8 = label/finland_tupasentie_label.jpg
+
+kenya_1 = label/kenya_chumvinirise_label.jpg
+kenya_2 = label/kenya_crocodilepoint_label.jpg
+kenya_3 = label/kenya_mwanda_label.jpg
+kenya_4 = label/kenya_mwatate_label.jpg
+kenya_5 = label/kenya_taitahills_label.jpg
+kenya_6 = label/kenya_taventadescent_label.jpg
+kenya_7 = label/kenya_tsavo_label.jpg
+kenya_8 = label/kenya_wundanyiclimb_label.jpg
+
+
+label_id1 = finland_alhojarvi
+label_id2 = finland_hanisjarventie
+label_id3 = finland_isojarvi
+label_id4 = finland_kaatselk
+label_id5 = finland_kakaristo
+label_id6 = finland_lankamaa
+label_id7 = finland_mutanen
+label_id8 = finland_tupasentie
+
+kenya_id1 = kenya_chumvinirise
+kenya_id2 = kenya_crocodilepoint
+kenya_id3 = kenya_mwanda
+kenya_id4 = kenya_mwatate
+kenya_id5 = kenya_taitahills
+kenya_id6 = kenya_taventadescent
+kenya_id7 = kenya_tsavo
+kenya_id8 = kenya_wundanyiclimb
+
+
+
+src_result_roi1 = 450, 170, 1000, 220
+src_result_roi2 = 0, -5, 600, 50, +
+
+
+detect_trackname:
+	finland_label
+		label_1
+			label_id1
+		label_2
+			label_id2
+		label_3
+			label_id3
+		label_4
+			label_id4
+		label_5
+			label_id5
+		label_6
+			label_id6
+		label_7
+			label_id7
+		label_8
+			label_id8
+	kenya_label
+		kenya_1
+			kenya_id1
+		kenya_2
+			kenya_id2
+		kenya_3
+			kenya_id3
+		kenya_4
+			kenya_id4
+		kenya_5
+			kenya_id5
+		kenya_6
+			kenya_id6
+		kenya_7
+			kenya_id7
+		kenya_8
+			kenya_id8
+
+
+detect_trackname_roi:
+	finland_label, src_result_roi1
+		label_1, src_result_roi2
+			label_id1
+		label_2, src_result_roi2
+			label_id2
+		label_3, src_result_roi2
+			label_id3
+		label_4, src_result_roi2
+			label_id4
+		label_5, src_result_roi2
+			label_id5
+		label_6, src_result_roi2
+			label_id6
+		label_7, src_result_roi2
+			label_id7
+		label_8, src_result_roi2
+			label_id8
+	kenya_label, src_result_roi1
+		kenya_1, src_result_roi2
+			kenya_id1
+		kenya_2, src_result_roi2
+			kenya_id2
+		kenya_3, src_result_roi2
+			kenya_id3
+		kenya_4, src_result_roi2
+			kenya_id4
+		kenya_5, src_result_roi2
+			kenya_id5
+		kenya_6, src_result_roi2
+			kenya_id6
+		kenya_7, src_result_roi2
+			kenya_id7
+		kenya_8, src_result_roi2
+			kenya_id8
+
+

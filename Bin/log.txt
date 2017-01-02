@@ -1,0 +1,1 @@
+imagematch script read [dirt3_scene.txt]

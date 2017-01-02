@@ -1,0 +1,382 @@
+
+
+timetrial_menu:
+	enter_nextscene
+
+	discipline, sidesel, updn
+		rally
+		rallycross
+		trailblazer
+		freestyle_gymkhana
+		landrush
+		head2head
+		drift_showcase
+		smash_attack
+		speed_run
+		gymkhana_sprint
+		gymkhana_attack
+
+	location, sidesel, updn
+		finland
+		kenya
+		michigan
+		monte_carlo
+		norway
+		aspen
+		la_coliseum
+		monaco
+		shibuya
+		smelter
+		dc_compound
+
+	track, sidesel, updn
+		tupasentie
+		hanisjarventie
+		lankamaa
+		isorjarvi
+		alhojarvi
+		kaatselka
+		kakaristo
+		mutanen
+		paijanne_approach
+		vaaksy_run
+		evijarvie
+
+		mwatate
+		taveta_descent
+		crocodile_point
+		wundanyi_climb
+		tsavo
+		chumvini_rise
+		mwanda
+		taita_hills
+		leopard_rock
+		yatta_ridge
+		garba_tula
+
+		mountain_drive
+		peninsula_run
+		quincy_mine
+		kenton_descent
+		horizon_drive
+		calumet_pass
+		lighthouse_view
+		pine_ridge
+		lake_gratiot
+		lake_superior
+		eagle_river
+
+		col_st_roch
+		baroque
+		gorges_de_piaon
+		lacet_de_blanc
+		sospel
+		col_de_turini
+		bois_noir
+		route_des_anges
+
+		kantvegen
+		litlikaupanger
+		paalsrudvegen
+		aasstuevegen
+		hamar_descent
+		birkebeinervegen
+		skaarsetsaga
+		rustadvegen
+		vaaler_climb
+		hafjell_descent
+		nordsetervegen
+		bobsleigh_run
+
+
+		lakeside
+		lake_view
+		snowmass_sprint
+		snowmass_loop
+		eagle_hill_rise
+		eagle_hill_loop
+		brush_creek_sprint
+		brush_creek_dash
+		buttermilk_descent
+		buttermilk_climb
+
+		
+		exposition_drive
+		figueroa_loop
+		vermont_avenue
+		arena_sprint
+		memorial_park
+		coliseum_air
+		olympic_field
+		exposition_plaza
+
+
+		casino_square
+		port_neuve
+		sainte_devote
+		quai_antoine
+		boulevard_albert
+		port_hercule
+		palace_square
+		harbour_view
+		marina_face_off
+		marina_duel
+
+		sakuragaokacho
+		udagawacho
+		yamanote_line
+		hachiko_square
+
+		county_loop
+		portage_canal
+		houghton_sprint
+		waterfront_park
+		copper_run
+		maple_woods
+		atlantic_mill
+		coles_creek
+		dredger_duel
+		furnace_duel
+
+		parking_lot
+		depot
+		waterfront
+		power_station
+		all_areas
+		parking_log_depot
+
+
+	vehicle_class, sidesel, updn
+		pro
+		open
+		s2000
+		90s
+		group_b
+		80s
+		70s
+		60s
+		raid
+		s2000_90s
+		80s_group_b
+		60s_70s
+		rallycross
+		rallyx_group_b
+		mordern
+		classic
+		classic_mordern
+		trucks
+		buggies
+		trucks_buggies
+
+
+timetrial_ingame_menu:
+	race
+	ghosts
+		ghost_list
+	assists
+		assists_select
+			experience_level, sidesel
+				casual
+				intermediate
+				advanced
+	vehicle_setup
+		vehicle_setup_menu	
+
+
+
+
+
+singlerace_menu:
+	discipline, sidesel
+		rally
+		rallycross
+		trailblazer
+		gymkhana
+		landrush
+		head2head
+
+	location, sidesel
+		finland
+		kenya
+		michigan
+		monte_carlo
+		norway
+		aspen
+		la_coliseum
+		monaco
+		shibuya
+		smelter
+		dc_compound
+
+	track, sidesel
+		tupasentie
+		hanisjarventie
+		lankamaa
+		isorjarvi
+		alhojarvi
+		kaatselka
+		kakaristo
+		mutanen
+		paijanne_approach
+		vaaksy_run
+		evijarvie
+
+		mwatate
+		taveta_descent
+		crocodile_point
+		wundanyi_climb
+		tsavo
+		chumvini_rise
+		mwanda
+		taita_hills
+		leopard_rock
+		yatta_ridge
+		garba_tula
+
+		mountain_drive
+		peninsula_run
+		quincy_mine
+		kenton_descent
+		horizon_drive
+		calumet_pass
+		lighthouse_view
+		pine_ridge
+		lake_gratiot
+		lake_superior
+		eagle_river
+
+		col_st_roch
+		baroque
+		gorges_de_piaon
+		lacet_de_blanc
+		sospel
+		col_de_turini
+		bois_noir
+		route_des_anges
+
+		kantvegen
+		litlikaupanger
+		paalsrudvegen
+		aasstuevegen
+		hamar_descent
+		birkebeinervegen
+		skaarsetsaga
+		rustadvegen
+		vaaler_climb
+		hafjell_descent
+		nordsetervegen
+		bobsleigh_run
+
+
+		lakeside
+		lake_view
+		snowmass_sprint
+		snowmass_loop
+		eagle_hill_rise
+		eagle_hill_loop
+		brush_creek_sprint
+		brush_creek_dash
+		buttermilk_descent
+		buttermilk_climb
+		
+		exposition_drive
+		figueroa_loop
+		vermont_avenue
+		arena_sprint
+		memorial_park
+		coliseum_air
+		olympic_field
+		exposition_plaza
+
+		casino_square
+		port_neuve
+		sainte_devote
+		quai_antoine
+		boulevard_albert
+		port_hercule
+		palace_square
+		harbour_view
+		marina_face_off
+		marina_duel
+
+
+		sakuragaokacho
+		udagawacho
+		yamanote_line
+		hachiko_square
+
+		county_loop
+		portage_canal
+		houghton_sprint
+		waterfront_park
+		copper_run
+		maple_woods
+		atlantic_mill
+		coles_creek
+		dredger_duel
+		furnace_duel
+
+		parking_lot
+		depot
+		waterfront
+		power_station
+		all_areas
+		parking_log_depot
+
+
+	vehicle_class, sidesel
+		pro
+		open
+		s2000
+		90s
+		group_b
+		80s
+		70s
+		60s
+		raid
+		s2000_90s
+		80s_group_b
+		60s_70s
+		rallycross
+		rallyx_group_b
+		mordern
+		classic
+		classic_mordern
+		trucks
+		buggies
+		trucks_buggies
+
+
+	laps, sidesel
+		1
+		2
+		3
+		4
+		5
+
+	conditions, sidesel
+		evening_sun
+		night
+		morning_sun
+		rain
+		wet
+		fog
+		snow
+
+
+
+
+singlerace_ingame_menu:
+	race
+	entrants
+		entrants_list
+	difficult_and_assist
+		difficulty_and_assists_select
+			experience_level, sidesel
+				casual
+				intermediate
+				advanced
+	vehicle_setup
+		vehicle_setup_menu
+
+

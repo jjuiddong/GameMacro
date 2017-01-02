@@ -1,0 +1,8 @@
+
+match_script_name = dirt3_scene.txt
+
+execute_label = @detect_scene
+
+test_filename = test.txt
+
+
